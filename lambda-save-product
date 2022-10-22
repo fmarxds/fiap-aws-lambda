@@ -1,16 +1,17 @@
 'use strict';
 
 var AWS = require('aws-sdk'),
-	uuid = require('uuid'),
 	dynamoClient = new AWS.DynamoDB.DocumentClient();
 
 exports.saveProduct = function (event, context, callback) {
 	
+	const body = JSON.parse(event.body);
+	
 	var params = {
 		Item: {
-			"id": uuid.v1(),
-			"nome": event.nome,
-			"valor": event.valor
+			"id": AWS.util.uuid.v4(),
+			"nome": body.nome,
+			"valor": body.valor
 		},
 		TableName: process.env.TABLE_NAME
 	};
@@ -19,4 +20,4 @@ exports.saveProduct = function (event, context, callback) {
 		callback(err, data);
 	});
 
-}
+};

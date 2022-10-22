@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "83fbcf13-9978-4a8c-9ea6-648689c3552a",
+		"name": "produtos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4735669"
+	},
+	"item": [
+		{
+			"name": "Listar Produtos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ygk96o66n8.execute-api.us-east-1.amazonaws.com/products",
+					"protocol": "https",
+					"host": [
+						"ygk96o66n8",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Salvar Produto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Galaxy S22\",\n    \"valor\": 3500.50\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ygk96o66n8.execute-api.us-east-1.amazonaws.com/products",
+					"protocol": "https",
+					"host": [
+						"ygk96o66n8",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

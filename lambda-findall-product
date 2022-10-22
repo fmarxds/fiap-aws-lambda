@@ -17,4 +17,4 @@ exports.findAllProducts = function (event, context, callback) {
         }
     });
 
-}
+};

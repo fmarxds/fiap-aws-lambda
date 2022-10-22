@@ -8,11 +8,23 @@ Criação de duas Lambda functions na AWS que interagem com um banco de dados Dy
 
 ### Endpoints
 
-// TODO
+- GET Produtos
+```
+https://ygk96o66n8.execute-api.us-east-1.amazonaws.com/products
+```
+
+- POST Produtos
+```
+https://ygk96o66n8.execute-api.us-east-1.amazonaws.com/products
+
+{
+    "nome": "Galaxy S22",
+    "valor": 3500.50
+}
+```
+
 
 ### Postman
-
-// TODO
 
 Na pasta `postman`, na raiz do projeto, está a collection para ser importada localmente.
 
